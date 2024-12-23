@@ -2,10 +2,14 @@
     "name": "wubinworks/module-xml-security",
     "description": "A replacement of `\\Magento\\Framework\\Xml\\Security` for Magento 2 with enhanced security.",
     "keywords": [
+        "magento2",
         "magento 2",
-        "xml",
+        "xxe",
         "security",
-        "xml-security",
+        "xml",
+        "xml entity",
+        "xml encoding",
+        "xml security",
         "enhancement",
         "encoding",
         "php-fpm"
