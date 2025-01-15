@@ -7,7 +7,11 @@
 When the `SAPI` is `php-fpm`, `\Magento\Framework\Xml\Security` cannot detect entity if the XML string is not encoded in `UTF-8`.  
 This is a potential security issue and many developers forget to detect the XML encoding before using this class.
 
-_Note: this class works correctly in CLI._
+_Note: the above class works correctly in CLI._
+
+##### A note about [CVE-2024-2961](https://www.cve.org/CVERecord?id=CVE-2024-2961)
+
+_XML string with `encoding="ISO-2022-CN-EXT"` won't cause the buffer overflow. So we don't forbid this encoding._
 
 ## Features
 
@@ -22,6 +26,7 @@ That's it.
 
 ## Requirements
 
+Magento 2.3  
 Magento 2.4
 
 ## Installation
